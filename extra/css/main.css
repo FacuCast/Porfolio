@@ -2615,28 +2615,37 @@ body>article {
 }
 
 .animation-examples.sometxt {
-    outline: 5px dashed red;
-    box-shadow: 0 0 0 5px blue;
-    animation: 3s animateBorderOne ease infinite;
+	outline: 5px dashed red;
+	box-shadow: 0 0 0 5px blue;
+	animation: 3s animateBorderOne ease infinite;
 }
 
 @keyframes animateBorderOne {
-    to {
-        outline-color: rgba(89, 83, 121, 0.075);
-        box-shadow: 0 0 0 2px green;
-    }
+	to {
+		outline-color: rgba(89, 83, 121, 0.075);
+		box-shadow: 0 0 0 2px green;
+	}
 }
 
 @keyframes htmlc {
-    to {
-        outline-color: rgba(89, 83, 121, 0.075);
-        box-shadow: 0 0 0 1px green;
-    }
+	to {
+		outline-color: rgba(89, 83, 121, 0.075);
+		box-shadow: 0 0 0 1px green;
+	}
 }
 
-.htmlc:hover{
+.htmlc:hover {
 	outline: 5px dashed rgb(255, 94, 0);
-    box-shadow: 0 0 0 5px blue;
+	box-shadow: 0 0 0 5px blue;
 	animation: 1s htmlc;
 
+}
+
+.zoom {
+	overflow: hidden;
+}
+
+.zoom a:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
