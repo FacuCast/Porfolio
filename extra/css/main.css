@@ -401,10 +401,6 @@ footer>p {
 		margin: 0;
 	}
 
-	#IrVentanaFlotante:target {
-		margin-top: 30%;
-	}
-
 	.container.medium {
 		width: 100%;
 	}
@@ -2666,9 +2662,9 @@ body>article {
 	background-color: #43B3E0;
 	width: 400px;
 	padding: 10px 20px;
-	margin: 20% auto;
-	position: relative;
-}
+	position: absolute;
+	inset-block-start: 23vh;
+  }
 
 .modal {
 	background-color: rgba(0, 0, 0, .8);
@@ -2679,7 +2675,7 @@ body>article {
 	left: 0;
 	opacity: 0;
 	pointer-events: none;
-	transition: all 1s;
+	transition: opacity 1s;
 	display: flex;
 	width: 100vw;
 	height: 100vh;
