@@ -388,6 +388,10 @@ footer>p {
 	}
 
 }
+@media screen and (min-width: 800px) {
+	.ventana {
+		width: 60%;
+	}}
 
 @media screen and (max-width: 736px) {
 
@@ -2660,7 +2664,6 @@ body>article {
 
 .ventana {
 	background-color: #43B3E0;
-	width: 400px;
 	padding: 10px 20px;
 	position: absolute;
 	inset-block-start: 23vh;
