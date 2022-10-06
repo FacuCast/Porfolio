@@ -359,9 +359,6 @@ footer>p {
 	.container {
 		width: 1200px;
 	}
-.ventana {
-	width: 80%;
-	}
 	.container.medium {
 		width: 900px;
 	}
@@ -373,9 +370,6 @@ footer>p {
 	/*.container {
 				width: 960px;
 			}*/
-.ventana {
-	width: 80%;
-	}
 	.container.medium {
 		width: 720px;
 	}
@@ -391,12 +385,13 @@ footer>p {
 	.container.medium {
 		width: 75%;
 	}
-	.ventana {
-	width: 90%;
-	}
 
 }
-
+@media screen and (min-width: 740px) {
+.ventana {
+		width: 400px;
+	}
+}
 @media screen and (max-width: 736px) {
 
 	.container {
