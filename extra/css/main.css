@@ -2680,6 +2680,11 @@ body>article {
 	opacity: 0;
 	pointer-events: none;
 	transition: all 1s;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
 }
 
 #IrVentanaFlotante:target {
