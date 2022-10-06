@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
-@import url("fontawesome-all.min.css");
+@import url("fontawesome-all.
+	.css");
 
 /*
 	Miniport by HTML5 UP
@@ -358,7 +359,9 @@ footer>p {
 	.container {
 		width: 1200px;
 	}
-
+.ventana {
+	width: 80%;
+	}
 	.container.medium {
 		width: 900px;
 	}
@@ -370,7 +373,9 @@ footer>p {
 	/*.container {
 				width: 960px;
 			}*/
-
+.ventana {
+	width: 80%;
+	}
 	.container.medium {
 		width: 720px;
 	}
@@ -385,6 +390,9 @@ footer>p {
 
 	.container.medium {
 		width: 75%;
+	}
+	.ventana {
+	width: 90%;
 	}
 
 }
@@ -2660,7 +2668,6 @@ body>article {
 
 .ventana {
 	background-color: #43B3E0;
-	width: 400px;
 	padding: 10px 20px;
 	position: absolute;
 	inset-block-start: 23vh;
