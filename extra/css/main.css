@@ -393,9 +393,12 @@ footer>p {
 
 	.container {
 		width: 100%;
-		max-width: calc(100% - 30px);
+		/*max-width: calc(100% - 30px);*/
 	}
-
+	#nav ul{
+		background: #282828;
+margin: 0;
+	}
 	.container.medium {
 		width: 100%;
 	}
@@ -2661,7 +2664,7 @@ body>article {
 .modal {
 	background-color: rgba(0, 0, 0, .8);
 	position: fixed;
-	top: -250px;
+	top: -5%;
 	right: 0;
 	bottom: 0;
 	left: 0;
