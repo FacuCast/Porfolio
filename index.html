@@ -16,14 +16,14 @@
 	<meta property="og:image" content="https://facucast.github.io/Porfolio/images/portada.jpg" />
 	<meta property="og:description" content="Hola soy Facundo castaño , te invito a ver mi portafio" />
 	<meta property="og:site_name" content="Facundo castaño 👨‍💻" />
-  
+
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Facundo castaño 👨‍💻">
 	<meta name="twitter:description" content="Hola soy Facundo castaño , te invito a ver mi portafio">
 	<meta name="twitter:creator" content="Facundo castaño">
 	<meta name="twitter:image" content="https://facucast.github.io/Porfolio/images/portada.jpg">
-  
+
 	<!-- Schema.org para Google+ -->
 	<meta itemprop="name" content="Facundo castaño 👨‍💻">
 	<meta itemprop="description" content="Hola soy Facundo castaño , te invito a ver mi portafio">
@@ -41,14 +41,19 @@
 			<li><a href="#contact">Contacto</a></li>
 			<li><a href="#work">Habilidad</a></li>
 			<li><a href="#portfolio">Proyectos</a></li>
-			<li><a href="#top">Volver Arriba</a></li>
 		</ul>
 	</nav>
+	<div class="infe"><a class="icoFlecha" href="#top"><img src="images/flecha.png"></a></div>
+	
+
 	<div class="opcion">
-		<a href="#IrVentanaFlotante" style="position: fixed;z-index: 1;margin-left: 1%;width: 98%;">
+		<a href="#IrVentanaFlotante" style="position: fixed;z-index: 2;margin-left: 1%;">
 			<img src='images/logo.svg' align="right" width='50' title='desplegar ventana flotante'>
 		</a>
 	</div>
+	<div><a href="#IrVentana" style="position: fixed;z-index: 1;margin-left: 1%;width: 98%;">
+			<img src='images/pc.png' align="right" width='50' title='desplegar ventana flotante'>
+		</a></div>
 	<!-- Home -->
 	<article id="top" class="wrapper style1">
 		<div class="container">
@@ -80,9 +85,32 @@
 
 			</header>
 
+			<div id="IrVentana" class="modal"
+				style="display: flex;width: 100vw;height: 110vh;justify-content: center;align-items: center;">
+				<div class="ventana">
+					<a href="#contact" style='text-decoration:none;'>
+						X
+					</a>
+					<h2 class="textos">¡Servicio Técnico de PC!</h2>
+					<p class="textos"><b>- Instalar un Sistema Operativo y configurarlo.</b></p>
+					<p class="textos"><b>- Instalar programas y Drivers.</b></p>
+					<p class="textos"><b>- Detectar un componente que este funcionando mal y reemplazarlo.</b></p>
+					<p class="textos"><b>- Agregar elementos de hardware a una PC que este funcionando correctamente o
+							no.</b></p>
+					<p class="textos"><b>- Realizar tareas de actualización.</b></p>
+					<p class="textos"><b>- Dar alguna explicación de cómo utilizar la PC o algún programa.</b></p>
 
+					</br><a style="color:black;" href="mailto:profecastano13@gmail.com"
+						class="icon brands fa-google-plus"><strong style="color:blueviolet;font-size: 17px;">Enviar un
+							mail!</strong></a></b></p>
 
-			<div id="IrVentanaFlotante" class="modal" style="display: flex;width: 100vw;height: 110vh;justify-content: center;align-items: center;">
+				</div>
+			</div>
+
+			
+
+			<div id="IrVentanaFlotante" class="modal"
+				style="display: flex;width: 100vw;height: 110vh;justify-content: center;align-items: center;">
 				<div class="ventana">
 					<a href="#contact" style='text-decoration:none;'>
 						X
@@ -97,6 +125,7 @@
 
 				</div>
 			</div>
+
 
 
 			<div class="row aln-center">
