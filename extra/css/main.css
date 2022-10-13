@@ -192,6 +192,11 @@ body.is-preload *:after {
 	-ms-transition: none !important;
 	transition: none !important;
 }
+b, strong {
+    font-weight: 34px;
+    color: #3e3e3e;
+    line-height: 94px;
+}
 
 body,
 input,
@@ -393,7 +398,16 @@ footer>p {
 	.ventana {
 		width: 60%;
 	}
-
+    #nav ul {
+        margin-bottom: 0;
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        height: 100%;
+    }
 	#nav li {
 		display: inline-block;
 		padding-left: 0;
