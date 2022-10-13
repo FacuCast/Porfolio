@@ -413,7 +413,7 @@ footer>p {
 	#nav ul {
 		background: #282828;
 		margin: 0;
-		display: ruby;
+		display: flex;
 	}
 
 	.container.medium {
