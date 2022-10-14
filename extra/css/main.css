@@ -2770,3 +2770,7 @@ body>article {
 	z-index:11;
 
 }
+
+#nav li {
+		display: inline-block;
+	}
