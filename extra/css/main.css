@@ -426,6 +426,7 @@ footer>p {
 	#nav ul {
 		background: #282828;
 		margin: 0;
+		display: inline;
 	}
 
 	.container.medium {
