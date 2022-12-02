@@ -13,41 +13,50 @@
         justify-content: center;
         align-items: center;
     }
+
     .card {
         top: 50%;
         left: 50%;
-        transform: translate(0%,0%);
+        transform: translate(0%, 0%);
         width: 80vh;
         height: 30vh;
         margin: 0 2% 2% 0.5%;
     }
+
     .card .image {
         width: 100%;
         height: 100%;
         overflow: hidden;
     }
+
     .card .image img {
         width: 100%;
         transition: .5s;
     }
+
     .card:hover .image img {
         opacity: .5;
-        transform: translateX(30%);/*100%*/
+        transform: translateX(30%);
+        /*100%*/
     }
+
     .card .details {
         position: absolute;
         top: 0;
         left: 0;
-        width: 70%;/*100%*/
+        width: 70%;
+        /*100%*/
         height: 100%;
         background: #ffc107;
         transition: .5s;
         transform-origin: left;
         transform: perspective(2000px) rotateY(-90deg);
     }
+
     .card:hover .details {
         transform: perspective(2000px) rotateY(0deg);
     }
+
     .card .details .center {
         padding: 20px;
         text-align: center;
@@ -56,6 +65,7 @@
         top: 50%;
         transform: translateY(-50%);
     }
+
     .card .details .center h1 {
         margin: 0;
         padding: 0;
@@ -64,25 +74,30 @@
         font-size: 20px;
         text-transform: uppercase;
     }
+
     .card .details .center h1 span {
         font-size: 14px;
         color: #262626;
     }
+
     .card .details .center p {
         margin: 10px 0;
         padding: 0;
         color: #262626;
     }
+
     .card .details .center ul {
         margin: 10px auto 0;
         padding: 0;
         display: table;
     }
+
     .card .details .center ul li {
         list-style: none;
         margin: 0 5px;
         float: left;
     }
+
     .card .details .center ul li a {
         display: block;
         background: #262626;
@@ -93,11 +108,12 @@
         text-align: center;
         transform: .5s;
     }
+
     .card .details .center ul li a:hover {
         background: #ff3636;
     }
-    
-    
+
+
 
     .slider {
         height: 450px;
@@ -293,93 +309,109 @@
         width: 99%;
         padding-top: 10%;
     }
+
     .card {
-    top: 50%;
-    left: 50%;
-    transform: translate(0%,-50%);
-    width: 360px;
-    height: 208px;
-	margin: 0 2% 2% 0.5%;
-}
-.card .image {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.card .image img {
-    width: 100%;
-    transition: .5s;
-}
-.card:hover .image img {
-    opacity: .5;
-    transform: translateX(30%);/*100%*/
-}
-.card .details {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%;/*100%*/
-    height: 100%;
-    background: #ffc107;
-    transition: .5s;
-    transform-origin: left;
-    transform: perspective(2000px) rotateY(-90deg);
-}
-.card:hover .details {
-    transform: perspective(2000px) rotateY(0deg);
-}
-.card .details .center {
-    padding: 20px;
-    text-align: center;
-    background: #fff;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.card .details .center h1 {
-    margin: 0;
-    padding: 0;
-    color: #ff3636;
-    line-height: 20px;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-.card .details .center h1 span {
-    font-size: 14px;
-    color: #262626;
-}
-.card .details .center p {
-    margin: 10px 0;
-    padding: 0;
-    color: #262626;
-}
-.card .details .center ul {
-    margin: 10px auto 0;
-    padding: 0;
-    display: table;
-}
-.card .details .center ul li {
-    list-style: none;
-    margin: 0 5px;
-    float: left;
-}
-.card .details .center ul li a {
-    display: block;
-    background: #262626;
-    color: #fff;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    transform: .5s;
-}
-.card .details .center ul li a:hover {
-    background: #ff3636;
-}
+        top: 50%;
+        left: 50%;
+        transform: translate(0%, -50%);
+        width: 360px;
+        height: 208px;
+        margin: 0 2% 2% 0.5%;
+    }
+
+    .card .image {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .card .image img {
+        width: 100%;
+        transition: .5s;
+    }
+
+    .card:hover .image img {
+        opacity: .5;
+        transform: translateX(30%);
+        /*100%*/
+    }
+
+    .card .details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        /*100%*/
+        height: 100%;
+        background: #ffc107;
+        transition: .5s;
+        transform-origin: left;
+        transform: perspective(2000px) rotateY(-90deg);
+    }
+
+    .card:hover .details {
+        transform: perspective(2000px) rotateY(0deg);
+    }
+
+    .card .details .center {
+        padding: 20px;
+        text-align: center;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .card .details .center h1 {
+        margin: 0;
+        padding: 0;
+        color: #ff3636;
+        line-height: 20px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .card .details .center h1 span {
+        font-size: 14px;
+        color: #262626;
+    }
+
+    .card .details .center p {
+        margin: 10px 0;
+        padding: 0;
+        color: #262626;
+    }
+
+    .card .details .center ul {
+        margin: 10px auto 0;
+        padding: 0;
+        display: table;
+    }
+
+    .card .details .center ul li {
+        list-style: none;
+        margin: 0 5px;
+        float: left;
+    }
+
+    .card .details .center ul li a {
+        display: block;
+        background: #262626;
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        transform: .5s;
+    }
+
+    .card .details .center ul li a:hover {
+        background: #ff3636;
+    }
 
 
     .container1 {
-        width: 90vh;
+        width: 90vw;
         height: 50vh;
         display: flex;
         justify-content: center;
@@ -483,8 +515,8 @@
 
     .slider [class*="box"]:nth-child(6),
     .slider [class*="box"]:nth-child(1) {
-        width: 100vh;
-        height: 60vh;
+        width: 0vh;
+        height: 0vh;
         transform: scale(0.2) translate(-50%, -50%);
         top: 10%;
         z-index: 1;
@@ -492,9 +524,8 @@
 
     .slider [class*="box"]:nth-child(2),
     .slider [class*="box"]:nth-child(6) {
-        width: 100vh;
-        height: 60vh;
-        transform: scale(0.4) translate(-50%, -50%);
+        width: 0vh;
+        height: 0vh;
         top: 20%;
         z-index: 2;
     }
@@ -519,11 +550,11 @@
     }
 
     .slider [class*="box"]:nth-child(1) {
-        left: -13%;
+        left: -3%;
     }
 
     .slider [class*="box"]:nth-child(2) {
-        left: -5%;
+        left: 5%;
     }
 
     .slider [class*="box"]:nth-child(3) {
@@ -535,11 +566,11 @@
     }
 
     .slider [class*="box"]:nth-child(5) {
-        left: 71%;
+        left: 61%;
     }
 
     .slider [class*="box"]:nth-child(6) {
-        left: 100%;
+        left: 0%;
     }
 
     .slider .firstSlide {
