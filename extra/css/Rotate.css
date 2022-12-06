@@ -44,7 +44,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 70%;
+        width: 80%;
         /*100%*/
         height: 100%;
         background: #ffc107;
@@ -64,6 +64,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        font-size: 18px;
     }
 
     .card .details .center h1 {
@@ -117,7 +118,7 @@
 
     .slider {
         height: 450px;
-        width: 90vw;
+        width: 80vw;
         display: flex;
         perspective: 1000px;
         position: relative;
@@ -206,7 +207,7 @@
         /*   float: left; */
         overflow: hidden;
         border-radius: 20px;
-        transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+        transition: all 1s cubic-bezier(0.1, 0.5, 0.27, 1.55);/*0.68, -0.6, 0.32, 1.6);*/
         position: absolute;
     }
 
@@ -239,11 +240,11 @@
 
     .slider [class*="box"]:nth-child(4) {
         width: 50vw;
-        height: 35vh;
+        height: 30vh;
         border-color: #c92026;
         color: #fff;
         transform: scale(1) translate(-50%, -50%);
-        top: 50%;
+        top: 45%;
         z-index: 4;
     }
 
@@ -264,7 +265,7 @@
     }
 
     .slider [class*="box"]:nth-child(5) {
-        left: 64%;
+        left: 50%;
     }
 
     .slider [class*="box"]:nth-child(6) {
@@ -340,7 +341,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 70%;
+        width: 80%;
         /*100%*/
         height: 100%;
         background: #ffc107;
@@ -411,7 +412,7 @@
 
 
     .container1 {
-        width: 90vw;
+        /*width: 90vw;*/
         height: 50vh;
         display: flex;
         justify-content: center;
@@ -509,7 +510,7 @@
         /*   float: left; */
         overflow: hidden;
         border-radius: 20px;
-        transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+        transition: all 1s cubic-bezier(0.1, 0.5, 0.27, 1.55);
         position: absolute;
     }
 
