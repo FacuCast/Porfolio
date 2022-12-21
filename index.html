@@ -34,14 +34,23 @@
 	<link rel="stylesheet" href="extra/css/Rotate.css" />
 </head>
 
-<body class="is-preload">
-
+<body id="page" class="is-preload">
 	<!-- Nav -->
 	<nav id="nav">
 		<ul class="container">
 			<li><a href="#contact">Contacto</a></li>
 			<li><a href="#work">Habilidad</a></li>
 			<li><a href="#portfolio">Proyectos</a></li>
+			<li>
+				<div class="container-btn-mode">
+					<div id="id-sun" class="btn-mode sun active">
+						<i class="fas fa-sun"></i>
+					</div>
+					<div id="id-moon" class="btn-mode moon">
+						<i class="fas fa-moon"></i>
+					</div>
+				</div>
+			</li>
 		</ul>
 	</nav>
 	<div class="infe"><a class="icoFlecha" href="#top"><img src="images/flecha.png"></a></div>
@@ -286,6 +295,25 @@
 
 	</article>
 	<script>
+		/*Si clicamos en el botón del sol, borrarémos la clase css dark-mode del div 
+con id page y se aplicará el estilo active al sol*/
+		document.getElementById('id-sun').onclick = function () {
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+			document.getElementById('page').classList.remove('dark-mode')
+			document.getElementById('id-moon').classList.remove('active')
+			this.classList.add('active')
+		}
+		/*Si clicamos en el botón de la luna, añadiremos la clase css dark-mode del div 
+		con id page y se aplicará el estilo active a la luna*/
+		document.getElementById('id-moon').onclick = function () {
+
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+			document.getElementById('page').classList.add('dark-mode')
+			document.getElementById('id-sun').classList.remove('active')
+			this.classList.add('active')
+		}
 		function rotate() {
 			var lastChild = $('.slider div:last-child').clone();
 			/*$('#test').html(lastChild)*/

@@ -192,9 +192,11 @@ body.is-preload *:after {
 	-ms-transition: none !important;
 	transition: none !important;
 }
-b, strong {
-    font-weight: 34px;
-    color: #3e3e3e;
+
+b,
+strong {
+	font-weight: 34px;
+	color: #3e3e3e;
 }
 
 body,
@@ -397,16 +399,22 @@ footer>p {
 	.ventana {
 		width: 60%;
 	}
-    #nav ul {
-        margin-bottom: 0;
-        list-style: none;
-        padding-left: 0;
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-        align-items: center;
-        height: 100%;
-    }
+
+	.container-btn-mode {
+		position: absolute;
+	}
+
+	#nav ul {
+		margin-bottom: 0;
+		list-style: none;
+		padding-left: 0;
+		display: flex;
+		justify-content: center;
+		gap: 50px;
+		align-items: center;
+		height: 100%;
+	}
+
 	#nav li {
 		display: inline-block;
 		padding-left: 0;
@@ -2001,9 +2009,7 @@ ul.social li a.fa-google-plus {
 	background-color: #DA2713;
 }
 
-ul.social li a.fa-github {
-	background-color: #FAFAFA;
-}
+ul.social li a.fa-github {}
 
 ul.social li a.fa-rss {
 	background-color: #F2600B;
@@ -2153,16 +2159,15 @@ ul.actions li:first-child {
 
 .wrapper.style1 {
 	background-image: none;
-	background-color: #fff;
 }
 
 .wrapper.style2 {
-	background-color: #fafafa;
+
 	text-shadow: 1px 1px 0px #fff;
 }
 
 .wrapper.style3 {
-	background-color: #f4f4f4;
+
 	text-shadow: 1px 1px 0px #fff;
 }
 
@@ -2757,21 +2762,81 @@ body>article {
 	filter: blur(3px);
 }
 
-.infe{
-	position:fixed;
+.infe {
+	position: fixed;
 
 	height: 128px;
 
-	width:128px;
+	width: 128px;
 	top: calc(100% - 50px);
 
 	left: calc(100% - 50px);
 
-	z-index:11;
+	z-index: 11;
 
 }
 
 #nav li {
-		display: inline-block;
-	}
+	display: inline-block;
+}
 
+.container-btn-mode {
+	top: 10px;
+	right: 30px;
+	cursor: pointer;
+	z-index: 2;
+	font-size: 0;
+}
+
+.btn-mode {
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	border: 2px solid black;
+	transition: background-color .5s;
+}
+
+.btn-mode i {
+	display: block;
+	font-size: 17px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.btn-mode.sun {
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-right: 1px solid transparent;
+}
+
+.btn-mode.moon {
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.active {
+	background-color: black;
+	color: #ffcd5c !important;
+}
+
+
+.dark-mode {
+	background-color: #0e0e0e;
+	transition: background-color .5s;
+}
+
+.dark-mode .card {
+	background-color: #1A1C1E;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode .btn-contact {
+	color: white;
+}
+
+.dark-mode .btn-mode {
+	background-color: #1A1C1E;
+	border: 1px solid white;
+	color: white;
+}
