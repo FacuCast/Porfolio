@@ -298,27 +298,43 @@
 		/*Si clicamos en el botón del sol, borrarémos la clase css dark-mode del div 
 con id page y se aplicará el estilo active al sol*/
 		document.getElementById('id-sun').onclick = function () {
-			var dark = body.classList.toggle('dark-mode');
-			localStorage.setItem("dark-mode", !dark);
-
 			var element = document.body;
 			element.classList.toggle("dark-mode");
-			document.getElementById('page').classList.remove('dark-mode')
+			document.getElementById('page').classList.add('blanco')
 			document.getElementById('id-moon').classList.remove('active')
 			this.classList.add('active')
-
+			if (document.body.classList.contains('dark-mode')) {
+				localStorage.setItem("dark-mode", 'true');
+			} else {
+				localStorage.setItem("dark-mode", 'false');
+			}
 		}
 		/*Si clicamos en el botón de la luna, añadiremos la clase css dark-mode del div 
 		con id page y se aplicará el estilo active a la luna*/
 		document.getElementById('id-moon').onclick = function () {
-			var dark = body.classList.toggle('dark-mode');
-			localStorage.setItem("dark-mode", !dark);
 
 			var element = document.body;
 			element.classList.toggle("dark-mode");
-			document.getElementById('page').classList.add('dark-mode')
-			document.getElementById('id-sun').classList.remove('active')
+			document.getElementById('page').classList.add('dark-mode');
+			document.getElementById('id-sun').classList.remove('active');
 			this.classList.add('active')
+			if (document.body.classList.contains('dark-mode')) {
+				localStorage.setItem("dark-mode", 'true');
+			} else {
+				localStorage.setItem("dark-mode", 'false');
+			}
+		}
+
+		if (localStorage.getItem('dark-mode') === 'true') {
+			document.getElementById('page').classList.add('dark-mode');
+			document.getElementById('id-moon').classList.add('active');
+			document.getElementById('id-sun').classList.remove('active');
+
+		} else {
+			document.getElementById('page').classList.remove('dark-mode');
+			document.getElementById('id-moon').classList.remove('active');
+			document.getElementById('id-sun').classList.add('active');
+
 		}
 		function rotate() {
 			var lastChild = $('.slider div:last-child').clone();

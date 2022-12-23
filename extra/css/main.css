@@ -2819,6 +2819,26 @@ body>article {
 	color: #ffcd5c !important;
 }
 
+.blanco {
+	background-color: white;
+	transition: background-color .5s;
+}
+
+.blanco .card {
+	background-color: white;
+}
+
+.blanco h1,
+.blanco h2,
+.blanco .btn-contact {
+	color: #0e0e0e;
+}
+
+.blanco .btn-mode {
+	
+	border: 1px solid #0e0e0e;
+	color: white;
+}
 
 .dark-mode {
 	background-color: #0e0e0e;
