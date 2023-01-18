@@ -2226,7 +2226,7 @@ ul.actions li:first-child {
 	margin-bottom: 0;
 	list-style: none;
 	padding-left: 0;
-	display: ruby;
+	display: flex;
 }
 
 #nav li {
