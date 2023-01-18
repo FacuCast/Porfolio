@@ -2393,6 +2393,13 @@ body>article {
 
 @media screen and (max-width: 980px) {
 
+.container-btn-mode {
+	top: 10px;
+	right: 30px;
+	cursor: pointer;
+	z-index: 2;
+	font-size: 0;
+}
 	/* Articles */
 
 	#top {
@@ -2409,7 +2416,13 @@ body>article {
 /* Small */
 
 @media screen and (max-width: 736px) {
-
+.container-btn-mode {
+	right: 80px;
+cursor: pointer;
+font-size: 0;
+width: 50%;
+position: fixed;
+}
 	/* Basic */
 
 	body {
@@ -2778,14 +2791,6 @@ body>article {
 
 #nav li {
 	display: inline-block;
-}
-
-.container-btn-mode {
-	top: 10px;
-	right: 30px;
-	cursor: pointer;
-	z-index: 2;
-	font-size: 0;
 }
 
 .btn-mode {
