@@ -437,12 +437,6 @@ footer>p {
 		/*max-width: calc(100% - 30px);*/
 	}
 
-	#nav ul {
-		background: #282828;
-		margin: 0;
-		display: inline;
-	}
-
 	.container.medium {
 		width: 100%;
 	}
@@ -2216,8 +2210,8 @@ ul.actions li:first-child {
 	left: 0;
 	top: 0;
 	width: 100%;
-	z-index: 10000;
 	cursor: default;
+	z-index: 1;
 	height: 3.5em;
 	line-height: 3.5em;
 }
@@ -2226,7 +2220,7 @@ ul.actions li:first-child {
 	margin-bottom: 0;
 	list-style: none;
 	padding-left: 0;
-	display: flex;
+	
 }
 
 #nav li {
