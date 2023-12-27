@@ -203,6 +203,33 @@
     }
 
 
+    .box7 {
+        background: url('https://facucast.github.io/Porfolio/images/wordpress.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #ece9e9;
+
+        border-top: 1px solid #ffc107;
+        border-right: 1px solid #ffc107;
+        border-bottom: 1px solid #ffc107;
+        border-left: 1px solid #ffc107;
+
+    }
+    .box8 {
+        background: url('https://facucast.github.io/Porfolio/images/Python.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #ece9e9;
+
+        border-top: 1px solid #ffc107;
+        border-right: 1px solid #ffc107;
+        border-bottom: 1px solid #ffc107;
+        border-left: 1px solid #ffc107;
+
+    }
+
     .slider [class*="box"] {
         /*   float: left; */
         overflow: hidden;
@@ -504,7 +531,32 @@
         border-left: 1px solid #ffc107;
 
     }
+    .box7 {
+        background: url('https://facucast.github.io/Porfolio/images/wordpress.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #ece9e9;
 
+        border-top: 1px solid #ffc107;
+        border-right: 1px solid #ffc107;
+        border-bottom: 1px solid #ffc107;
+        border-left: 1px solid #ffc107;
+
+    }
+    .box8 {
+        background: url('https://facucast.github.io/Porfolio/images/Python.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #ece9e9;
+
+        border-top: 1px solid #ffc107;
+        border-right: 1px solid #ffc107;
+        border-bottom: 1px solid #ffc107;
+        border-left: 1px solid #ffc107;
+
+    }
 
     .slider [class*="box"] {
         /*   float: left; */
