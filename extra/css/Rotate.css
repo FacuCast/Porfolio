@@ -656,3 +656,48 @@
         }
     }
 }
+/* Estilos generales */
+#google_translate_element {
+    display: inline-block;
+}
+
+/* Estilos del selector de idioma */
+.goog-te-gadget-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.goog-te-gadget-simple {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed:hover {
+    background-color: #f2f2f2;
+}
+
+/* Flecha hacia abajo */
+.VIpgJd-ZVi9od-xl07Ob-lTBxed span[aria-hidden="true"] {
+    margin-left: 5px;
+}
+
+/* Ajuste de estilo para la flecha */
+.skiptranslate .goog-te-gadget {
+    line-height: 1.2;
+}
+.VIpgJd-ZVi9od-ORHb {
+    display: none !important;
+  }
